@@ -1,0 +1,344 @@
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #f5d4a8;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .main-header h1 {
+    font-size: 3.5rem;
+    color: #003049;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  #imgLogo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* ========== NAVBAR ========== */
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    background-color: #f77f00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    color: #003049;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar li a:hover {
+    color: #d62828; /* color al pasar el mouse */
+    border-bottom: 2px solid #d62828;
+  }
+
+  section {
+    scroll-margin-top: 60px;
+  }
+
+  /* ========== SOBRE MÍ ========== */
+
+  #sobre-mi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #FFFCF2;
+    color: #2c2c2c;
+  }
+
+  #sobre-mi p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  #imgYo01{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  #proyectos h2,
+  #habilidades h2,
+  #peliculas h2,
+  #contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003049;
+    margin-bottom: 2rem;
+  }
+
+  /* ========== PROYECTOS ========== */
+
+  #proyectos {
+    background-color: #FFF3B0;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  .card-proyectos {
+    background-color: #FFFCF2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .card-proyectos:hover {
+    transform: translateY(-4px);
+  }
+
+  .img-card {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .card-proyectos h3 {
+    margin: 16px 16px 8px;
+    font-size: 1.2em;
+  }
+  
+  .card-proyectos p {
+    margin: 0 16px 16px;
+    font-size: 0.95em;
+    text-align: justify;
+  }
+
+  /* ========== HABILIDADES ========== */
+
+  #habilidades {
+    background-color: #FFFCF2;
+    padding: 2rem;
+  }
+
+  .tabla-habilidades {
+    width: 50%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 0 auto;
+  }
+
+  .tabla-habilidades th, .tabla-habilidades td {
+    border: 2px solid black;
+    background-color: #f4a261;
+    color: #003049;
+    padding: 0.75rem;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .tabla-habilidades th {
+    background-color: #f77f00;
+  }
+
+  /* ========== PELÍCULAS ========== */
+
+  #peliculas {
+    background-color: #FFF3B0; 
+    padding: 2rem;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .card-peliculas {
+    background-color: #FFFCF2;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    flex: 1 1 300px;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding-bottom: 1rem;
+  }
+
+  .card-peliculas:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-peliculas img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .card-peliculas h3 {
+    color: #003049;
+    margin: 1rem 0 0.5rem;
+  }
+
+  .card-peliculas p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    color: #444;
+  }
+
+  /* ========== CONTACTO ========== */
+
+  #contacto {
+    background-color: #FFFCF2;
+    padding: 2rem;
+  }
+
+  #contacto p {
+    text-align: center;
+    color: #2c2c2c;
+  }
+
+  .form-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-contacto input {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+  }
+
+  .form-contacto input:focus,
+  .form-contacto button:focus {
+    outline: 2px solid #f77f00;
+  }
+
+  .form-contacto button {
+    background-color: #f77f00;
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1.3rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .form-contacto button:hover {
+    background-color: #d62828;
+  }
+
+  /* ========== FOOTER ========== */
+
+  .footer {
+    background-color: #fcbf49;
+    color: #003049;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #ccc;
+  }
+
+  /* ========== RESPONSIVE ========== */
+
+  @media (max-width: 768px) {
+
+    .main-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .navbar {
+      justify-content: center;
+    }
+
+    .navbar ul {
+      margin-left: 0;
+      justify-content: center;
+    }
+
+    .navbar li a {
+      font-size: 1rem;
+    }
+    #sobre-mi {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    #imgYo01 {
+      margin-top: 2rem;
+    }
+
+    .tabla-habilidades {
+      width: 100%;
+    }
+
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%; 
+      max-width: 95%;
+    }
+  }
+  
+  

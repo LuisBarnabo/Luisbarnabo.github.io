@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Mi Portafolio Personal</title>
+</head>
+<body>
+    <header class="main-header">
+        <img id="imgLogo" src="img/logoCompleto01.png" alt="Logo">
+        <h1>Mi Portafolio Personal</h1>
+    </header>
+    <nav class="navbar"> <!--Mejora a futuro agregar logo en miniatura que aparezca cuando el header desaparece de la vista-->
+        <ul>
+            <li><a href="#sobre-mi">Sobre Mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sobre-mi" class="grid">
+            <div>
+                <p>👋 ¡Hola! Soy Luis Barnabó, estudiante de la Tecnicatura en Desarrollo de Software, un mundo en el que estoy dando mis primeros pasos con mucho entusiasmo. Me encanta todo lo que tenga que ver con tecnología, y si a eso le sumás una buena partida de videojuegos, mejor aún.</p>
+
+                <p> Fuera del código, me encontrás en el gimnasio, levantando pesas como levanto bugs del código: con esfuerzo y buena onda. Aunque todavía tengo poca experiencia, estoy convencido de que el aprendizaje constante y la pasión por lo que uno hace son el mejor motor para crecer.</p>
+            </div>
+            <img id="imgYo01" src="img/imgYo01.png" alt="imagen de mi en caricatura">
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="card-grid">
+                <div class="card-proyectos">
+                    <img src="img/imgPortadaClubDepEscritorio.png" alt="Imagen portada del sistema del club deportivo de escritorio" class="img-card">
+                    <h3>Club Deportivo en C#</h3>
+                    <p>
+                        <p>
+                            Se desarrolló un sistema de escritorio para gestionar altas, bajas y modificaciones de socios, así como el seguimiento de cuotas pagadas y pendientes. También permite generar el carnet de cada socio y ofrece funciones para filtrar datos, emitir reportes y simplificar la administración diaria mediante una interfaz clara y funcional.
+                        </p>
+                        
+                    </p>
+                </div>
+                <div class="card-proyectos">
+                    <img src="img/imgPortadaClubDeportAndroid.png" alt="Imagen portada del programa del club deportivo en android" class="img-card">
+                    <h3>Club Deportivo en Android Studio</h3>
+                    <p>
+                        Se adaptó y migró el sistema del club deportivo a una versión móvil en Android utilizando Kotlin, permitiendo así una mayor accesibilidad y portabilidad. Esta nueva versión mantiene la funcionalidad original, pero con una interfaz optimizada para dispositivos móviles y mejoras en la experiencia del usuario.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades"><!--Agregar efecto hover al pasar el mouse por cada una de las celdas-->
+            <h2>Habilidades</h2>
+            <table class="tabla-habilidades">
+                <thead>
+                    <tr>
+                        <th>Tecnologías con experiencia</th>
+                        <th>Tecnologías que deseo aprender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Typescript</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>React</td>
+                    </tr>
+                    <tr>
+                        <td>MySQL</td>
+                        <td>Docker</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Node.JS</td>
+                    </tr>
+                    <tr>
+                        <td>JAVA</td>
+                        <td>Tailwind CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Kotlin</td>
+                        <td>Flutter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="peliculas">
+            <h2>Peliculas favoritas</h2>
+            <div class="card-container">
+                <div class="card-peliculas">
+                    <img src="img/fightClub.webp" alt="Banner de la película El club de la pelea">
+                    <h3>El Club de la Pelea (1999)</h3>
+                    <p>
+                        Es un retrato brutal de la identidad masculina, la alienación moderna y el consumismo.
+                        Narrativamente rompe con lo tradicional: el plot twist te vuela la cabeza.
+                        Tiene una estética oscura, simbología por todos lados, y frases que se te quedan pegadas.
+                    </p>
+                    <p>💡 "Lo que posees termina poseyéndote." — Esta frase lo dice todo.</p>
+                </div>
+                <div class="card-peliculas">
+                    <img src="img/matrix02.webp" alt="Banner de la película de Matrix 1">
+                    <h3>Matrix (1999)</h3>
+                    <p>
+                        Revolucionó los efectos especiales (bullet time, estética cyberpunk).
+                        Es una metáfora perfecta sobre el control, la libertad y la percepción de la realidad.
+                        Filosóficamente, toca temas de Descartes, Platón, y la idea de vivir en una simulación… ¡todo eso en una peli de acción!
+                    </p>
+                    <p>💊 Azul o roja: el concepto trascendió el cine y se convirtió en parte de la cultura popular.</p>
+                </div>
+                <div class="card-peliculas">
+                    <img src="img/parasitos.webp" alt="Banner de la película de Parasitos">
+                    <h3>Parasitos (2020)</h3>
+                    <p>
+                        Es una crítica social finísima envuelta en una historia que mezcla drama, comedia, suspenso y terror.
+                        Cambia de tono sin que te des cuenta, y eso es dificilísimo de lograr bien.
+                        Visualmente es brillante: cada plano tiene algo que contar, y la casa es casi un personaje más.
+                    </p>
+                    <p>🏆 Ganó el Oscar a Mejor Película sin ser de habla inglesa. Eso es histórico.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto"><!--Este formulario deberia enviarme los datos a mi casilla de correo / mejora a futuro-->
+            <h2>Contacto</h2>
+            <p>Enviame un mensaje para ponernos en contacto!</p>
+            <form class="form-contacto" action="#" method="POST" enctype="application/x-www-form-urlencoded">
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" required>
+                <input type="text" name="Apellido" id="Apellido" placeholder="Ingresa tu apellido" required>
+                <input type="email" name="Email" id="Email" placeholder="Ingresa tu correo electrónico" required>
+                <input type="tel" name="Tel" id="Tel" pattern="[\d\+\-\(\)\s]{8,15}" placeholder="Teléfono" required>
+                <button type="submit" id="btnSubmit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Luis V. H. Barnabó. Todos los derechos reservados.</p>
+      </footer>
+      
+</body>
+</html>
